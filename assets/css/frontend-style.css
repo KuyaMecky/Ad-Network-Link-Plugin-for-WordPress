@@ -1,0 +1,62 @@
+/* Frontend Styles for Ad Network Link Plugin */
+
+.adnl-wrapper {
+    display: inline-block;
+    max-width: 100%;
+    margin: 10px 0;
+}
+
+.adnl-link {
+    display: block;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.adnl-link:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
+
+.adnl-link:active {
+    transform: scale(0.98);
+}
+
+.adnl-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: none;
+    outline: none;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .adnl-wrapper {
+        width: 100%;
+    }
+    
+    .adnl-image {
+        width: 100%;
+    }
+}
+
+/* Prevent layout shifts */
+.adnl-link img {
+    vertical-align: middle;
+}
+
+/* Optional: Add loading animation */
+.adnl-image[src] {
+    animation: adnl-fade-in 0.3s ease-in;
+}
+
+@keyframes adnl-fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
