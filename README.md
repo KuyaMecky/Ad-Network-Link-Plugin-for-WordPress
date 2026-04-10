@@ -154,7 +154,7 @@ GPL v2 or later
 
 ## Credits
 
-Developed by Your Name
+Developed by Michael Tallada
 
 ---
 Need help or want to contribute? Open an issue or pull request on the plugin repository.
